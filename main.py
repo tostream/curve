@@ -18,7 +18,7 @@ def merge_result(result_df: pd.DataFrame, popt_df: pd.DataFrame) -> pd.DataFrame
   return df
 
 def main(mode="w", header=True):
-  dataframe = pd.read_csv('/content/sanofi.csv')
+  dataframe = pd.read_csv(input_file)
   data = dataframe.values
   x = data[:, 0].astype(float)
 
